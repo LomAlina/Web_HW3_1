@@ -8,6 +8,7 @@
 // Примечания: Пользователь всегда вводит корректное число.
 // Советую округлить значение после рассчетов, так как в некоторых случаях может получиться "длинная дробь".
 
-const temperature = Number.parseInt(prompt("Введите температуру в градусах Цельсия"));
-const faringate = Math.round((9/5) * temperature + 32);
-alert(`Цельсий: ${temperature}, Фарингейт: ${faringate}`);
+const temperature = Number.parseFloat(prompt("Введите температуру в градусах Цельсия"));
+const faringate = 9 / 5 * temperature + 32;
+// faringate.toFixed(2);
+alert(`Цельсий: ${temperature}, Фарингейт: ${faringate.toFixed(2)}`);
